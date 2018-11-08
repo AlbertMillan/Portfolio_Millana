@@ -37,3 +37,20 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+angular.json
+package-lock.json
+package.json
+tsconfig.json
+*.spec.json
+*.app.json
+**/tslint.json
+.editorconfig
+
+# Code Files
+*polyfills.ts
+*tests.ts
+*.spec.ts
+
+# Images
+*.jpg
+*.png
