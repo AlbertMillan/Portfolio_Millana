@@ -13,16 +13,14 @@ export class VideoComponent implements OnInit {
 
   ngOnInit() {
     // Animate Square Video
-    document.getElementById("video-container").addEventListener("click", function() {
-      this.classList.toggle("is-active");
-    });
+    // document.getElementById("video-container").addEventListener("click", function() {
+    //   this.classList.toggle("is-active");
+    // });
   }
 
   onPlayerReady(api:VgAPI)
   {
     this.api = api;
-
-    //this.api.getDefaultMedia().subscriptions.
   }
 
 }

@@ -13,7 +13,9 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+    document.getElementById("dragon-video").addEventListener("click", function() {
+      document.getElementById("video-container").classList.toggle("is-active");
+    });
   }
 
 }
