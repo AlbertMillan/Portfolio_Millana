@@ -13,4 +13,9 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollTo(){
+    // window.scroll(0, this.findPos(document.getElementById("sheit")));
+    document.getElementById("about").scrollIntoView();
+  }
+
 }

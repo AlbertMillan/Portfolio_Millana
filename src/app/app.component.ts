@@ -8,4 +8,25 @@ import { NavigationComponent } from './navigation/navigation.component';
 })
 export class AppComponent {
   title = 'myPortfolio';
+
+  constructor() {
+
+  }
+
+  scrollTo(){
+    // window.scroll(0, this.findPos(document.getElementById("sheit")));
+    document.getElementById("about").scrollIntoView();
+  }
+
+  findPos(obj) {
+    var curtop = 0;
+    if( obj.offsetParent )
+    {
+      do
+      {
+        curtop += obj.offsetTop;
+      } while( obj = obj.offsetParent)
+    }
+    return [curtop];
+  }
 }
